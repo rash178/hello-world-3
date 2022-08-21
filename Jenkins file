@@ -13,7 +13,7 @@ pipeline{
         stage ('Build Docker image'){
             steps {
                 script {
-                    bat 'docker build -t rash1708/my-app-1.0.'
+                    bat 'docker build -t rash1708/my-app- 1.0.'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline{
             steps {
                 script {
                   bat 'docker login -u rash1708 -p dckr_pat_od_74k6H6edqshWKQv_kSQlOMJo'
-                 bat 'docker push rash1708/my-app-1.0.'
+                 bat 'docker push rash1708/my-app- 1.0.'
                 }
             }
         }
